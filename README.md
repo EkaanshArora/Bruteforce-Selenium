@@ -15,9 +15,9 @@ Assuming you have Python 3 ([preferably v3.6 or above to stay away from Unicode 
 
 ## Instructions
 
--Open file usernames.txt, add usernames to bruteforce seperated by a new line character.
--You can edit the 'main.py' to change password-list and URL.
--Save and run in cmd using "python main.py"
+- Open file usernames.txt, add usernames to bruteforce seperated by a new line character.
+- You can edit the 'main.py' to change password-list and URL.
+- Save and run in cmd using "python main.py"
 
 ## License
 
