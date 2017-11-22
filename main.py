@@ -48,10 +48,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
-driver = webdriver.Firefox(executable_path=r'geckodriver.exe')
+driver = webdriver.Chrome(executable_path=r'chromedriver.exe')
 driver.get(url2)
 driver.get(url)
-print("No. of usernames to try"+str(filelength)+"\n")
+print("No. of usernames to try: "+str(filelength)+"\n")
+
 for i in range(filelength):													#No of lines in usernames.txt
 	curuser=readuser()
 	for i in range(len(passwords)):
@@ -66,4 +67,4 @@ for i in range(filelength):													#No of lines in usernames.txt
 			driver.get(url2)
 			driver.get(url)
 		else:
-			time.sleep(.25)
+			time.sleep(.2)
